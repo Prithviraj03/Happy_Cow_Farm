@@ -22,15 +22,14 @@ Note hat a cow surrounded by grass cells has a score of 0.
 
 - **Programming Language**: Python3
 - **Libraries/Frameworks**: 
-  - Chess Framework: [Link to the documentation based on language, e.g., Python Chess Framework](https://siggame.github.io/Joueur.py/chess/index.html)
-  - AI Algorithms: [Time Limited Iterative Deepening Minimax,Time Limited Iterative Deepening Minimax with Alpha-Beta Pruning]
+  - AI Algorithms: [Best First Search, Breadth First Search, Iterative Deepening Depth First Search]
 
 ## Running the Project
 
 1. Clone the repository:
    ```bash
    https://github.com/Prithviraj03/Happy_Cow_Farm.git
-   cd Chess_AI
+   cd Happy_Cow_Farm
    ```
 
 2. Run the Program:
