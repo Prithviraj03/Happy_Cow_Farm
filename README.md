@@ -1,18 +1,19 @@
-# CS-5400 Puzzle 1
+# Happy Cow Puzzle
 
-For your first puzzle assignment, you will be implementing a **random move generator** for this semester's puzzle.
+## Introduction
+The puzzle for this semester is "Happy Cows Farm", a piece placement game. The objective of the game is to place in a field in a way that maximizes a score. Multiple algorithms are used to achieve the maximum score.
 
-- You can use C, C++, Mono C#, Python 3, JavaScript, Java.
-- If you plan to use another language, it should be supported by the CS department's Linux systems. (Please inform me if you are planning to use a language not listed above).
+### The Farm
+The farm is a square grid board where every cell location is either grass,  a haystack, or a water pond. Help Clayton the happy farmer place his cows 🐮 in the field while observing the following rules and preferences:
+1. There are as many cows as haystacks.
+2. Cows can only be placed in grass cells.
+3. Cows prefer to be adjacent to a haystack either horizontally or vertically.
+4. Cows are most happy if they are adjacent ( horizontally or vertically ) to both a haystack and a water pond.
+5. Cows dislike being next to another cow, horizontally, vertically and even diagonally.
 
-- You should develop, test, and submit your assignments in a matter compatible with the Computer Science Departments's Linux systems, which will be used for grading.
-
-- Programs will be graded (on a scale from 0 to 100) on multiple criteria, of which the most important is correctness. Complete and correct output for every test input case is necessary, but not sufficient, for a full score.
-- An auto-grader will be used to help the graders during the grading process. Therefore it is of supreme importance that you comply with the assignment's input and output format.
-
-- When your assignment is complete and ready, modify the content of the included `ReadyForGrading.txt` file to `Yes`. Also include the language you are programming in within the `ReadyForGrading.txt` file as well.
-- When including your langauge, write the langauge in **all lower case** with no version numbers (python will be assumed to be python3).
-- This is how you will indicate to the graders that your assignment is ready to be graded.
-
-- Please make sure you have a working `run.sh` script before submitting.
-
+### The Scoring
+Every cow placement has a corresponding score, which is the sum of the scores assigned to each cow. A cow's score is the sum of the following applicable rules :
+<p>+1 : If a cow is horizontally or vertically adjacent to a haystack.</p>
+<p>+2 : If a cow is horizontally or vertically adjacent to both a haystack and a water pond.</p>
+<p>-3 : If a cow is next to another cow ( horizontally, vertically or diagonally )</p>
+Note hat a cow surrounded by grass cells has a score of 0.
