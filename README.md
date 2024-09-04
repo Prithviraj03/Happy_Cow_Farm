@@ -17,3 +17,27 @@ Every cow placement has a corresponding score, which is the sum of the scores as
 <p>+2 : If a cow is horizontally or vertically adjacent to both a haystack and a water pond.</p>
 <p>-3 : If a cow is next to another cow ( horizontally, vertically or diagonally )</p>
 Note hat a cow surrounded by grass cells has a score of 0.
+
+## Technologies Used
+
+- **Programming Language**: Python3
+- **Libraries/Frameworks**: 
+  - Chess Framework: [Link to the documentation based on language, e.g., Python Chess Framework](https://siggame.github.io/Joueur.py/chess/index.html)
+  - AI Algorithms: [Time Limited Iterative Deepening Minimax,Time Limited Iterative Deepening Minimax with Alpha-Beta Pruning]
+
+## Running the Project
+
+1. Clone the repository:
+   ```bash
+   https://github.com/Prithviraj03/Happy_Cow_Farm.git
+   cd Chess_AI
+   ```
+
+2. Run the Program:
+   ```bash
+   # Make the script executable (if not already)
+   chmod +x run.sh
+
+   # Run the script
+   ./run.sh
+   ```
